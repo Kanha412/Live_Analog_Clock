@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon/fav.png">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">Here Is The Live Analog Clock</h1>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="script.js"></script>
+    <h1 id="time" class="foot"></h1>
+
+    <script type="text/javascript"> 
+        function display()
+        {
+            var refresh=1000;                       // Refresh rate in milli seconds
+            mytime=setTimeout('displayTime()',refresh)
+        }
+        function displayTime()
+        {
+            var x = new Date()
+            document.getElementById('time').innerHTML = x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+            display();
+         }
+        </script>
+
+<body onload=displayTime();>
+</html>
