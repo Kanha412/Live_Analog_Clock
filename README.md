@@ -1,5 +1,5 @@
 # Live_Analog_Clock
-<h3><b>An Attractive Live Analog Clock Using HTML , CSS and JavaScript.</b></h3>
+<h3><b>An Attractive Live Analog Clock Using HTML, CSS, JavaScript, HTML Canvas, and Mathematics.</b></h3>
 <br>
 
 <b>This Project Contains:-</b>
